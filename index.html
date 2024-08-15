@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FImages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FImages</h1>
+    <p>Be careful of what you upload. Once uploaded, anyone can view your image.</p>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="imageFile" name="imageFile" accept="image/*" required>
+        <input type="text" id="context" name="context" placeholder="Enter context" required>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="gallery"></div>
+    <script src="script.js"></script>
+</body>
+</html>
